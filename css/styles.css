@@ -1,0 +1,16 @@
+.menu-h{
+    list-style: none;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+.menu-h li{
+    list-style: none;
+    display: inline;
+    
+}
+
+.menu-h li a{
+    text-decoration: none;
+    color: rgb(24, 13, 63);
+}
