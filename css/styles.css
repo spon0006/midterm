@@ -1,16 +1,754 @@
-.menu-h{
-    list-style: none;
-    padding: 0;
-    background-color: lightgrey;
+html{
+    font-family: 'Fredoka', sans-serif;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.menu-h li{
+body {	
+	font-family: 'Fredoka', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	background:  rgb(253, 249, 249);
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 98px;
+	font-weight: bold;
+	text-align: center;
+    color:rgb(253, 249, 249) ;
+    background-color: rgb(24, 13, 63);
+}
+
+h2 {
+	font-size: 25px;
+	line-height: 1;
+	font-weight: bold;
+    padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 2px;
+    color:rgb(24, 13, 63);
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 1;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	margin-left: 2px;
+	padding-top:20px;
+    color:rgb(24, 13, 63) ;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 1;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	margin-left: 2px;
+    color:rgb(24, 13, 63) ;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.menu{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    margin-top: 60px;
+    text-align: center;  
+    background-color: rgb(253, 249, 249);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5em;
+}
+
+.menu-h{
     list-style: none;
-    display: inline;
+    padding: 0;   
+}
+
+.menu ul{
+    margin: 0 auto;
+}
+.menu ul li{
+    display: block;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(24, 13, 63); 
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+.menu ul li a:hover{
+    background-color: rgb(24, 13, 63);
+    color: rgb(185, 178, 178);
+}
+
+/* Add space to add the logo */
+.menu li:nth-child(1){
+    margin-right: 50px;
+}
+.menu li:nth-child(2){
+    margin-right: 400px;
+}
+
+.menu li:nth-child(3){
+    margin-left: 20px;
+}
+
+/* Remove margin-right */
+.menu li:nth-child(4) a{
+    margin-left: 50px;
+}
+
+.menu li:nth-child(1n+2) a{
+    text-align: right;
+}
+
+.logo{
+    width: 300px;
+    height: 112px;
+    background-image: url(../img/logofinal.png);
+    background-size: 300px 112px;
+    position: absolute;
+    left: 1px;
+    top: 0px;
+}
+
+button{
+    font-family:'Fredoka', sans-serif;
+    font-size: 40px;
+    background-color: rgb(185, 178, 178);
+    margin-top: 20px;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+    border-radius: 5    px;
+    box-shadow: 0 0 0 2px rgb(61, 5, 5);
+}
+
+button:hover{
+    background-color:rgb(24, 13, 63);
+    color: rgb(185, 178, 178);
+}
+
+button.submit {
+    float: right;
+}
+
+.special button:hover a{
+    background-color:rgb(24, 13, 63);
+    color: rgb(185, 178, 178);
+}
+
+.grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:16px;
+	align-items: center;
+    grid-template-areas: 
+        "one two three";
+}
+
+.grid-item img {
+    max-width: 385px;
+    height: auto;
+}
+
+.section-contact {
+	width: 85%;
+	padding: 10px;
+}
+.section-contact label{
+	margin-top: 20px;
+	margin-left: 9px;
+}
+
+.section-contact label :nth-child(3){
+	padding-bottom: 10px;
+}
+
+label{
+	font-size: 16px;
+    color: rgb(24, 13, 63);
+}
+
+input { 
+	width: 100%;
+	height: 30px;
+	border: 1px solid rgb(24, 13, 63);
+} 
+
+textarea{
+	width: 100%;
+	resize: none;
+	height: 150px;
+	border-radius: 3px;
+}
+
+.hours h3{
+	padding-top: 4px;
+	width: 90%;
+}
+th{
+	background-color: rgb(185, 178, 178);
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th{
+	border: 1px solid #222222;
+	padding: 15px;
+	font-size: 13px;
+}
+
+.location{
+	position: relative;
+	width: auto;
+}
+
+.section-team{
+    text-align: center;
+}
+
+.section-products{
+    text-align: center;
+}
+.team img{
+    padding-top: 25px;
+}
+
+.section-products img{
+    padding-top: 25px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 61%;
+	background-color: rgb(24, 13, 63);
+	color: rgb(185, 178, 178);
+	padding: 17px;
+	padding-top: 40px;
     
 }
 
-.menu-h li a{
+
+/*---- Desktop Starts ------*/
+
+@media screen and (min-width: 760px)
+
+html{
+    font-family: 'Fredoka', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {	
+	font-family: 'Fredoka', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	background:  rgb(253, 249, 249);
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 98px;
+	font-weight: bold;
+	margin-left: 400px;
+    color:rgb(253, 249, 249) ;
+    background-color: rgb(24, 13, 63);
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 1;
+	font-weight: bold;
+    padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 2px;
+    color:rgb(24, 13, 63);
+}
+
+h3 {
+	font-size: 36px;
+	line-height: 1;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	margin-left: 2px;
+	padding-top:20px;
+    color:rgb(24, 13, 63) ;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 1;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	margin-left: 2px;
+    color:rgb(24, 13, 63) ;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    margin-top: 60px;
+    background-color: rgb(253, 249, 249);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5em;
+}
+
+.menu-h{
+    list-style: none;
+    padding: 0;   
+}
+
+.menu ul{
+    margin: 0 auto;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li a{
     text-decoration: none;
+    color: rgb(24, 13, 63); 
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+.menu ul li a:hover{
+    background-color: rgb(24, 13, 63);
+    color: rgb(185, 178, 178);
+}
+
+/* Add space to add the logo */
+.menu li:nth-child(1){
+    margin-right: 50px;
+}
+.menu li:nth-child(2){
+    margin-right: 400px;
+}
+
+.menu li:nth-child(3){
+    margin-left: 20px;
+}
+
+/* Remove margin-right */
+.menu li:nth-child(4) a{
+    margin-left: 50px;
+}
+
+.menu li:nth-child(1n+2) a{
+    text-align: right;
+}
+
+.logo{
+    width: 300px;
+    height: 112px;
+    background-image: url(../img/logofinal.png);
+    background-size: 300px 112px;
+    position: absolute;
+    left: 800px;
+    top: 0px;
+}
+
+button{
+    font-family:'Fredoka', sans-serif;
+    font-size: 40px;
+    background-color: rgb(185, 178, 178);
+    margin-top: 20px;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+    border-radius: 5    px;
+    box-shadow: 0 0 0 2px rgb(61, 5, 5);
+}
+
+button:hover{
+    background-color:rgb(24, 13, 63);
+    color: rgb(185, 178, 178);
+}
+
+button.submit {
+    float: right;
+}
+
+.special button:hover a{
+    background-color:rgb(24, 13, 63);
+    color: rgb(185, 178, 178);
+}
+
+.grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:16px;
+	align-items: center;
+    grid-template-areas: 
+        "one two three";
+}
+
+.grid-item img {
+    max-width: 385px;
+    height: auto;
+}
+
+.section-contact {
+	width: 85%;
+	padding: 10px;
+}
+.section-contact label{
+	margin-top: 20px;
+	margin-left: 9px;
+}
+
+.section-contact label :nth-child(3){
+	padding-bottom: 10px;
+}
+
+label{
+	font-size: 16px;
     color: rgb(24, 13, 63);
 }
+
+input { 
+	width: 100%;
+	height: 30px;
+	border: 1px solid rgb(24, 13, 63);
+} 
+
+textarea{
+	width: 100%;
+	resize: none;
+	height: 150px;
+	border-radius: 3px;
+}
+
+.hours h3{
+	padding-top: 4px;
+	width: 90%;
+}
+th{
+	background-color: rgb(185, 178, 178);
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th{
+	border: 1px solid #222222;
+	padding: 15px;
+	font-size: 13px;
+}
+
+.location{
+	position: relative;
+	width: auto;
+}
+
+.section-team{
+    text-align: center;
+}
+
+.section-products{
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 61%;
+	background-color: rgb(24, 13, 63);
+	color: rgb(185, 178, 178);
+	padding: 17px;
+	padding-top: 40px;
+    
+}
+
+@media only screen and (min-width: 1200px){
+
+    html{
+        font-family: 'Fredoka', sans-serif;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    body {	
+        font-family: 'Fredoka', sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        background:  rgb(253, 249, 249);
+    }
+    
+    h1 {
+        font-size: 40px;
+        line-height: 98px;
+        font-weight: bold;
+        margin-left: 400px;
+        color:rgb(253, 249, 249) ;
+        background-color: rgb(24, 13, 63);
+    }
+    
+    h2 {
+        font-size: 48px;
+        line-height: 1;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 2px;
+        color:rgb(24, 13, 63);
+    }
+    
+    h3 {
+        font-size: 36px;
+        line-height: 1;
+        font-weight: bold;
+        margin-bottom: 0.8em;
+        margin-left: 2px;
+        padding-top:20px;
+        color:rgb(24, 13, 63) ;
+    }
+    
+    h4 {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: bold;
+        margin-bottom: 0.8em;
+        margin-left: 2px;
+        color:rgb(24, 13, 63) ;
+    }
+    
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+    .menu{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        margin-top: 60px;
+        background-color: rgb(253, 249, 249);
+        font-family: 'Fredoka', sans-serif;
+        font-size: 2.5em;
+    }
+    
+    .menu-h{
+        list-style: none;
+        padding: 0;   
+    }
+    
+    .menu ul{
+        margin: 0 auto;
+    }
+    .menu ul li{
+        display: inline-block;
+        list-style: none;
+        position: relative;
+    }
+    
+    .menu ul li a{
+        text-decoration: none;
+        color: rgb(24, 13, 63); 
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+    
+    .menu ul li a:hover{
+        background-color: rgb(24, 13, 63);
+        color: rgb(185, 178, 178);
+    }
+    
+    /* Add space to add the logo */
+    .menu li:nth-child(1){
+        margin-right: 50px;
+    }
+    .menu li:nth-child(2){
+        margin-right: 400px;
+    }
+    
+    .menu li:nth-child(3){
+        margin-left: 20px;
+    }
+    
+    /* Remove margin-right */
+    .menu li:nth-child(4) a{
+        margin-left: 50px;
+    }
+    
+    .menu li:nth-child(1n+2) a{
+        text-align: right;
+    }
+    
+    .logo{
+        width: 300px;
+        height: 112px;
+        background-image: url(../img/logofinal.png);
+        background-size: 300px 112px;
+        position: absolute;
+        left: 800px;
+        top: 0px;
+    }
+    
+    button{
+        font-family:'Fredoka', sans-serif;
+        font-size: 40px;
+        background-color: rgb(185, 178, 178);
+        margin-top: 20px;
+    }
+    
+    button a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    button:focus {
+        outline: 0;
+        border-radius: 5    px;
+        box-shadow: 0 0 0 2px rgb(61, 5, 5);
+    }
+    
+    button:hover{
+        background-color:rgb(24, 13, 63);
+        color: rgb(185, 178, 178);
+    }
+    
+    button.submit {
+        float: right;
+    }
+    
+    .special button:hover a{
+        background-color:rgb(24, 13, 63);
+        color: rgb(185, 178, 178);
+    }
+    
+    .grid{
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:16px;
+        align-items: center;
+        grid-template-areas: 
+            "one two three";
+    }
+    
+    .grid-item img {
+        max-width: 385px;
+        height: auto;
+    }
+    
+    .section-contact {
+        width: 85%;
+        padding: 10px;
+    }
+    .section-contact label{
+        margin-top: 20px;
+        margin-left: 9px;
+    }
+    
+    .section-contact label :nth-child(3){
+        padding-bottom: 10px;
+    }
+    
+    label{
+        font-size: 16px;
+        color: rgb(24, 13, 63);
+    }
+    
+    input { 
+        width: 100%;
+        height: 30px;
+        border: 1px solid rgb(24, 13, 63);
+    } 
+    
+    textarea{
+        width: 100%;
+        resize: none;
+        height: 150px;
+        border-radius: 3px;
+    }
+    
+    .hours h3{
+        padding-top: 4px;
+        width: 90%;
+    }
+    th{
+        background-color: rgb(185, 178, 178);
+    }
+    
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td, th{
+        border: 1px solid #222222;
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .location{
+        position: relative;
+        width: auto;
+    }
+    
+    .section-team{
+        text-align: center;
+    }
+    
+    .section-products{
+        text-align: center;
+    }
+    
+    footer{
+        position: fixed;
+        bottom: 0px;
+        width: 61%;
+        background-color: rgb(24, 13, 63);
+        color: rgb(185, 178, 178);
+        padding: 17px;
+        padding-top: 40px;
+        
+    }

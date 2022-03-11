@@ -6,26 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Flavours for you</title>
 </head>
 <body>
     <header>
-        <nav>
-          <ul class="menu-h">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>  
-        </nav>
+        <!-- Adds navigation bar -->
+        <div class="topnav">
+            <nav class="menu">
+                <ul class="menu-h">
+                        <li><a href="/midterm/index.html">Home</a></li>
+                        <li><a href="/midterm/aboutus.html">About us</a></li>
+                        <li><a href="/midterm/products.html">Products</a></li>
+                        <li><a href="/midterm/contact.html">Contact</a></li>
+                </ul>
+                <div class="logo"></div>
+            </nav>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <main>
+        <br><br>
+        <h1> A flavor for every mood </h1>
+        <br><br><br><br><br><br>
+        <div class="grid">
+            <!-- Adds images and buttons -->
+            <div class="Special grid-item">
+                <picture>
+                    <img
+                    
+                    src="./img/bacon_cake.jpg"
+                    alt="bacon cake">
+                </picture>
+                <button>
+                    <a href="/midterm/products.html">Special Cake &#9654</a>
+                </button>
+            </div>
 
+            <div class="gourmet grid-item">
+                <img src="../midterm/img/extrachocolate_cake.png" alt="Extra Chocolate Cake" title="Extra Chocolate Cake"/>
+                <button>
+                    <a href="/midterm/products.html">Gourmet Cake &#9654</a>
+                </button>
+            </div>
+
+            <div class="birthday grid-item">
+                <img src="../midterm/img/ball_cake.png" alt="Ball Cake" title="Ball Cake"/>
+                <button>
+                    <a href="/midterm/products.html"> Birthday Cake &#9654</a>
+                </button>
+            </div>
+        </div>
     </main>
 
-    <footer>
-
+    <!-- Adds footer -->
+    <footer class="footer">
+            &copy; Copyright Ariadne Spontone Art and Design, 2022<br>      
     </footer>
     
 </body>
