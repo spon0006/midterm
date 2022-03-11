@@ -441,7 +441,7 @@ footer{
     
     button:focus {
         outline: 0;
-        border-radius: 5    px;
+        border-radius: 5px;
         box-shadow: 0 0 0 2px rgb(61, 5, 5);
     }
     
