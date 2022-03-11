@@ -62,11 +62,6 @@ p {
     font-size: 1.4em;
 }
 
-/* .menu-h{
-    list-style: none;
-    padding: 0;   
-} */
-
 .menu ul{
 
     margin: 0 auto;
@@ -89,24 +84,6 @@ p {
     color: rgb(185, 178, 178);
 }
 
-/* Add space to add the logo */
-.menu li:nth-child(1){
-    /* margin-right: 50px; */
-}
-.menu li:nth-child(2){
-    /* margin-right: 400px; */
-}
-
-.menu li:nth-child(3){
-    /* margin-left: 20px; */
-}
-
-/* Remove margin-right */
-.menu li:nth-child(4) a{
-    /* margin-left: 50px; */
-}
-
-
 .logo{
     width: 300px;
     height: 112px;
@@ -116,11 +93,60 @@ p {
     margin: 0 auto;
     margin-top: -140px;
 }
+
 main > h1 {
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
 }
+
+.main{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(24, 13, 63);
+    position: relative;
+}
+.box span{
+    position: absolute;
+    top: -100%;
+    left: -105%;
+    width: 800%;
+    height: 80px;
+    border: 4px solid rgb(121, 81, 28);
+    border-radius: 50%;
+    animation: anim 4s infinite;
+}
+.box span:nth-child(1){
+    transform: rotate(-60deg);
+    animation: anim2 4s infinite;
+}
+.box span:nth-child(2){
+    transform: rotate(60deg);
+    animation: anim3 4s infinite;
+}
+/* Adds moviment */
+@keyframes anim{
+    0%,100%{transform: rotate(0deg);}
+    50%{transform: rotate(360deg);}
+}
+@keyframes anim2{
+    0%,100%{transform: rotate(-60deg);}
+    50%{transform: rotate(-300deg);}
+}
+@keyframes anim3{
+    0%,100%{transform: rotate(60deg);}
+    50%{transform: rotate(300deg);}
+}
+
 button{
     font-family:'Fredoka', sans-serif;
     font-size: 40px;
@@ -143,6 +169,7 @@ button:focus {
 button:hover{
     background-color:rgb(24, 13, 63);
     color: rgb(185, 178, 178);
+    transform: translateX(10px) scale(1.2);
 }
 
 button.submit {
